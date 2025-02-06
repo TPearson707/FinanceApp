@@ -1,17 +1,18 @@
 import './app.scss';
 
-import PrizeWinners from "./components/prizewinners/PrizeWinners";
-import Navbar from './components/navbar/Navbar';
+import Navbar from "./components/dashboard/navbar/Navbar"
+import Dashboard from './components/dashboard/Dashboard';
 
 const App = () => {
   return (
     <div>
       <section className="Homepage">
         <Navbar/>
-        <PrizeWinners/>
+        <Dashboard/>
       </section>
 
-      <section className="Banana"></section>
+      <section className="banana">Banana</section>
+
       </div>
   )
 }
