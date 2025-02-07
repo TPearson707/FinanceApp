@@ -1,14 +1,29 @@
 .navbar {
-    height: 100px;
+    height: 80px;
     position: relative;
     overflow: visible;
-    
+    // maybe add a background color for the navbar
     .wrapper {
-        max-width: 1366;
-        margin: auto;
+      max-width: 1366px;
+      margin: 0 auto;  // Center the wrapper
+      display: flex;   // Use flexbox for alignment
+      align-items: center; // Vertically center the content
+      justify-content: center; // Horizontally center the content
+      height: 100%;
+      padding: 0 20px; // Add padding for spacing inside the wrapper
+      // maybe add a background color for the wrapper
+  
+      ul {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            font-size: 36px;
+            color: plum;
+        }
+      }
     }
-}
+  }

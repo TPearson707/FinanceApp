@@ -6,13 +6,12 @@ import Dashboard from './pages/dashboard/Dashboard';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import NoPage from "./pages/NoPage";
+import Navbar from './components/navbar/Navbar';
 
 const App = () => {
-  <section>
-    <Homepage/>
-  </section>
   return (
     <BrowserRouter>
+      <Navbar/> {/* Navbar should now appear on all pages */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/dashboard" element={<Dashboard />} />
