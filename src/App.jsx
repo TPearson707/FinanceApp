@@ -1,20 +1,27 @@
 import './app.scss';
 
-import Navbar from "./components/dashboard/navbar/Navbar"
-import Dashboard from './components/dashboard/Dashboard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Homepage from './pages/homepage/Homepage';
+import Dashboard from './pages/dashboard/Dashboard';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
+import NoPage from "./pages/NoPage";
 
 const App = () => {
+  <section>
+    <Homepage/>
+  </section>
   return (
-    <div>
-      <section className="Homepage">
-        <Navbar/>
-        <Dashboard/>
-      </section>
-
-      <section className="banana">Banana</section>
-
-      </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoPage />} /> {/* Handle undefined routes */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

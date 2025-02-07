@@ -1,11 +1,11 @@
 import "./dashboard.scss"
 
+import Navbar from "../../components/navbar/Navbar"
+
 const Dashboard = () => {
     return (
         <div className="dashboard">
-            <div className="wrapper">
-                <div className="textContainer"> </div>
-            </div>
+            Dashboard
         </div>
     )
 }
