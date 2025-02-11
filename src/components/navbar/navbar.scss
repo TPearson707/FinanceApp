@@ -1,29 +1,58 @@
 .navbar {
-    height: 80px;
-    position: relative;
-    overflow: visible;
-    // maybe add a background color for the navbar
-    .wrapper {
-      max-width: 1366px;
-      margin: 0 auto;  // Center the wrapper
-      display: flex;   // Use flexbox for alignment
-      align-items: center; // Vertically center the content
-      justify-content: center; // Horizontally center the content
-      height: 100%;
-      padding: 0 20px; // Add padding for spacing inside the wrapper
-      // maybe add a background color for the wrapper
-  
-      ul {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-        li {
-            font-size: 36px;
-            color: plum;
-        }
-      }
-    }
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Quicksand", sans-serif; //imported
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .logo {
+  width: 225px; 
+  height: auto;
+}
+
+.nav-mid {
+  display: flex;
+  justify-content: center;
+  padding-right: 125px; //ignore... i was lazy
+}
+
+.nav-mid ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-mid li {
+  margin: 0 15px; 
+}
+
+.nav-mid a,
+.nav-right a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  padding: 10px 15px; 
+  border-radius: 40px; 
+  transition: all 0.2s ease; 
+}
+
+.nav-mid a:hover,
+.nav-right a:hover {
+  background-color: #8f8f8f; 
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right li {
+  margin: 0 15px;  
+}
